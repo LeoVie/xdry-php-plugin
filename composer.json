@@ -59,7 +59,7 @@
             "@auto-scripts"
         ],
         "psalm": "psalm -c build/config/psalm.xml --show-info=true",
-        "phpunit": "bin/phpunit -c build/config/phpunit.xml"
+        "phpunit": "phpunit -c build/config/phpunit.xml"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -72,8 +72,8 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.28",
+        "phpunit/phpunit": "^9.5",
         "psalm/plugin-symfony": "^3.1",
-        "symfony/phpunit-bridge": "^6.1",
         "vimeo/psalm": "^4.27"
     }
 }
