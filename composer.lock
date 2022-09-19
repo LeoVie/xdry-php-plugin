@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5136685f688360cb43f5e750a11eea0
+    "content-hash": "d5136685f688360cb43f5e750a11eea0",
     "packages": [
         {
             "name": "leovie/php-token-normalize",
