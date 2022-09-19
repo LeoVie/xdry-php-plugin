@@ -5,6 +5,8 @@ parameters:
     paths:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
+    ignoreErrors:
+        - '#Calling PhpParser\\Node\\.+__construct\(\) is forbidden.+#'
     disallowedMethodCalls:
         - method: '*\*::__construct'
           message: "Don't use naive object instantiation."
