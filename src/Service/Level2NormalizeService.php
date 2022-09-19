@@ -9,7 +9,6 @@ use LeoVie\PhpTokenNormalize\Service\TokenSequenceNormalizer;
 use PhpParser\Error;
 use PhpParser\Node;
 use PhpParser\Node\Stmt\Nop;
-use PhpParser\NodeDumper;
 use PhpParser\NodeTraverser;
 use PhpParser\NodeVisitorAbstract;
 use PhpParser\ParserFactory;
@@ -18,7 +17,10 @@ use PhpParser\PrettyPrinter\Standard;
 class Level2NormalizeService
 {
     public function __construct(
-        private TokenSequenceNormalizer $tokenSequenceNormalizer
+        private TokenSequenceNormalizer $tokenSequenceNormalizer,
+        private ParserFactory           $parserFactory,
+        private NodeTraverser           $nodeTraverser,
+        private Standard                $prettyPrinter,
     )
     {
     }
@@ -42,20 +44,16 @@ class Level2NormalizeService
 
     private function normalizeByParsing(string $fileContent): string
     {
-        $parser = (new ParserFactory())->create(ParserFactory::PREFER_PHP5);
-        try {
-            $ast = $parser->parse('<?php ' . $fileContent);
-        } catch (Error $error) {
-            echo "Parse error: {$error->getMessage()}\n";
-            die;
-        }
+        $parser = $this->parserFactory->create(ParserFactory::PREFER_PHP5);
+        /** @var array<Node> $ast */
+        $ast = $parser->parse('<?php ' . $fileContent);
 
-        $traverser = new NodeTraverser();
-        $traverser->addVisitor(new class extends NodeVisitorAbstract {
+        $this->nodeTraverser->addVisitor(new class extends NodeVisitorAbstract {
             public function enterNode(Node $node)
             {
                 return NodeTraverser::DONT_TRAVERSE_CHILDREN;
             }
+
             public function leaveNode(Node $node): Node
             {
                 if ($node instanceof Node\Stmt\Declare_) {
@@ -65,10 +63,8 @@ class Level2NormalizeService
             }
         });
 
-        $ast = $traverser->traverse($ast);
+        $ast = $this->nodeTraverser->traverse($ast);
 
-        $prettyPrinter = new Standard;
-
-        return $prettyPrinter->prettyPrintFile($ast);
+        return $this->prettyPrinter->prettyPrintFile($ast);
     }
 }
