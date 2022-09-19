@@ -20,7 +20,9 @@
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
             "symfony/flex": true,
-            "symfony/runtime": true
+            "symfony/runtime": true,
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true
         },
         "optimize-autoloader": true,
         "preferred-install": {
@@ -55,7 +57,9 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "psalm": "psalm -c build/config/psalm.xml --show-info=true",
+        "phpunit": "bin/phpunit -c build/config/phpunit.xml"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -65,5 +69,11 @@
             "allow-contrib": false,
             "require": "6.0.*"
         }
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.28",
+        "psalm/plugin-symfony": "^3.1",
+        "symfony/phpunit-bridge": "^6.1",
+        "vimeo/psalm": "^4.27"
     }
 }

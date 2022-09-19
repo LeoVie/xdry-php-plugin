@@ -1,0 +1,1 @@
+declare ( strict_types = 1 ) ; function foo ( string $first , int $second ) : int { $foo = $first . $second ; return strlen ( $foo ) ; }

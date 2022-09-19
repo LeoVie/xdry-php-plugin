@@ -1,0 +1,14 @@
+includes:
+        - /composer/vendor/spaze/phpstan-disallowed-calls/extension.neon
+parameters:
+    bootstrapFiles:
+        - %currentWorkingDirectory%/vendor/bin/.phpunit/phpunit/vendor/autoload.php
+    level: max
+    paths:
+        - %currentWorkingDirectory%/src
+        - %currentWorkingDirectory%/tests
+    disallowedMethodCalls:
+        - method: '*\*::__construct'
+          message: "Don't use naive object instantiation."
+          allowIn:
+              - %currentWorkingDirectory%/tests/*
