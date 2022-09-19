@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5136685f688360cb43f5e750a11eea0",
+    "content-hash": "d5136685f688360cb43f5e750a11eea0
     "packages": [
         {
             "name": "leovie/php-token-normalize",
@@ -2060,21 +2060,21 @@
         },
         {
             "name": "symfony/runtime",
-            "version": "v6.0.11",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/runtime.git",
-                "reference": "88813c1735d9ce6e1a7cccf63d6f2b6faca79018"
+                "reference": "e5d4d848656cbb1812d5f911b1bdec205c6e2fac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/runtime/zipball/88813c1735d9ce6e1a7cccf63d6f2b6faca79018",
-                "reference": "88813c1735d9ce6e1a7cccf63d6f2b6faca79018",
+                "url": "https://api.github.com/repos/symfony/runtime/zipball/e5d4d848656cbb1812d5f911b1bdec205c6e2fac",
+                "reference": "e5d4d848656cbb1812d5f911b1bdec205c6e2fac",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0|^2.0",
-                "php": ">=8.0.2"
+                "php": ">=8.1"
             },
             "conflict": {
                 "symfony/dotenv": "<5.4"
@@ -2116,7 +2116,7 @@
             "description": "Enables decoupling PHP applications from global state",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/runtime/tree/v6.0.11"
+                "source": "https://github.com/symfony/runtime/tree/v6.1.3"
             },
             "funding": [
                 {
@@ -2132,7 +2132,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-27T17:10:44+00:00"
+            "time": "2022-06-27T17:24:16+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -2466,20 +2466,20 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v6.0.12",
+            "version": "v6.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "8c68efb08b038ec02753da6f16e1601a6ed4ef17"
+                "reference": "86ee4d8fa594ed45e40d86eedfda1bcb66c8d919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/8c68efb08b038ec02753da6f16e1601a6ed4ef17",
-                "reference": "8c68efb08b038ec02753da6f16e1601a6ed4ef17",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/86ee4d8fa594ed45e40d86eedfda1bcb66c8d919",
+                "reference": "86ee4d8fa594ed45e40d86eedfda1bcb66c8d919",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2",
+                "php": ">=8.1",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -2520,7 +2520,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v6.0.12"
+                "source": "https://github.com/symfony/yaml/tree/v6.1.4"
             },
             "funding": [
                 {
@@ -2536,7 +2536,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-02T16:01:06+00:00"
+            "time": "2022-08-02T16:17:38+00:00"
         },
         {
             "name": "thecodingmachine/safe",
