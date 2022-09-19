@@ -6,7 +6,6 @@ namespace App\Service;
 
 use LeoVie\PhpTokenNormalize\Model\TokenSequence;
 use LeoVie\PhpTokenNormalize\Service\TokenSequenceNormalizer;
-use PhpParser\Error;
 use PhpParser\Node;
 use PhpParser\Node\Stmt\Nop;
 use PhpParser\NodeTraverser;
