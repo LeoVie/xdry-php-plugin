@@ -9,7 +9,7 @@
         "ext-iconv": "*",
         "leovie/php-token-normalize": "^3.0",
         "symfony/console": "6.0.*",
-        "symfony/dotenv": "6.0.*",
+        "symfony/dotenv": "6.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "6.0.*",
         "symfony/runtime": "6.0.*",
