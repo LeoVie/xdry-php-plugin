@@ -1,4 +1,4 @@
-ARG PHP_VERSION=8.1.8
+ARG PHP_VERSION=8.1.10
 FROM php:${PHP_VERSION}-fpm-alpine3.16 as composer
 
 COPY docker/install_composer.sh /install_composer.sh
