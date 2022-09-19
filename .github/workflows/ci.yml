@@ -18,7 +18,7 @@ jobs:
           ls ${{ github.workspace }}
       - name: "Install requirements"
         run: |
-          make setup_environment php_version=${{ matrix.php-version }}
+          make setup_environment
       - name: "Static Analysis"
         run: |
           make phpstan
