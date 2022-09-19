@@ -1,0 +1,1 @@
+declare ( str = 1 ) ; function str ( str $x , str $x ) : str { $x = $x . $x ; return str ( $x ) ; }

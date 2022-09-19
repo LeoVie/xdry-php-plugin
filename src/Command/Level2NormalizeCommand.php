@@ -13,7 +13,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Level2NormalizeCommand extends Command
 {
     public const NAME = 'normalize:level-2';
-    private const ARGUMENT_FILEPATH = 'filepath';
+    public const ARGUMENT_FILEPATH = 'filepath';
     protected static $defaultName = self::NAME;
 
     public function __construct(private Level2NormalizeService $level2NormalizeService)
