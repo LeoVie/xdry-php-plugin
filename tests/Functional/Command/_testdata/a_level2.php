@@ -1,1 +1,1 @@
-function str ( str $x , str $x ) : str { $x = $x . $x ; return str ( $x ) ; }
+function fun(identifier $x, identifier $x) : identifier { $x = $x . $x; return funcall($x); } class Cl { private identifier $prop = 'str'; public function fun() : identifier { return 1.0; } } (new Cl())->funcall();

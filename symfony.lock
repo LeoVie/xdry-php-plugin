@@ -1,7 +1,4 @@
 {
-    "leovie/php-token-normalize": {
-        "version": "v2.0.11"
-    },
     "phpunit/phpunit": {
         "version": "9.5",
         "recipe": {

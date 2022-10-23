@@ -4,59 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f29ba95826c68ac7ae4802ae6e0560b",
+    "content-hash": "7644de1ae7450a45142a005e34c98e82",
     "packages": [
-        {
-            "name": "leovie/php-token-normalize",
-            "version": "v3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LeoVie/php-token-normalize.git",
-                "reference": "52f686bcc0c6407af884c1d8d06333ed803e5dec"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LeoVie/php-token-normalize/zipball/52f686bcc0c6407af884c1d8d06333ed803e5dec",
-                "reference": "52f686bcc0c6407af884c1d8d06333ed803e5dec",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/config": "^6.0",
-                "symfony/dependency-injection": "^6.0",
-                "symfony/http-kernel": "^6.0",
-                "symfony/yaml": "^6.0",
-                "thecodingmachine/safe": "^2.1"
-            },
-            "require-dev": {
-                "infection/infection": "^0.26",
-                "phpunit/phpunit": "^9.5",
-                "psalm/plugin-symfony": "^3.0",
-                "symfony/phpunit-bridge": "^6.0",
-                "vimeo/psalm": "^4.10"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "LeoVie\\PhpTokenNormalize\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Leo Viezens",
-                    "email": "leo.viezens@web.de"
-                }
-            ],
-            "description": "Normalize php tokens.",
-            "support": {
-                "issues": "https://github.com/LeoVie/php-token-normalize/issues",
-                "source": "https://github.com/LeoVie/php-token-normalize/tree/v3.0.0"
-            },
-            "time": "2022-09-14T14:22:42+00:00"
-        },
         {
             "name": "nikic/php-parser",
             "version": "v4.15.1",

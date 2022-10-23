@@ -5,6 +5,8 @@ parameters:
     paths:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
+    excludePaths:
+    	- %currentWorkingDirectory%/tests/**/_testdata/*
     ignoreErrors:
         - '#Calling PhpParser\\Node\\.+__construct\(\) is forbidden.+#'
     disallowedMethodCalls:

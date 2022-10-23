@@ -14,3 +14,15 @@ function foo(string $first, int $second): int
 
     return strlen($foo);
 }
+
+class Fancy
+{
+    private string $hello = 'world';
+
+    public function bar(): float
+    {
+        return 100.0;
+    }
+}
+
+(new Fancy())->bar();

@@ -4,23 +4,27 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use LeoVie\PhpTokenNormalize\Model\TokenSequence;
-use LeoVie\PhpTokenNormalize\Service\TokenSequenceNormalizer;
+use App\PrettyPrinter\Level1PrettyPrinter;
+use PhpParser\ParserFactory;
 
 class Level1NormalizeService
 {
     public function __construct(
-        private TokenSequenceNormalizer $tokenSequenceNormalizer
+        private ParserFactory $parserFactory,
+        private Level1PrettyPrinter $level1PrettyPrinter
     )
     {
     }
 
     public function normalizeFileContent(string $fileContent): string
     {
-        $tokenSequence = TokenSequence::create(\PhpToken::tokenize($fileContent));
+        $parser = $this->parserFactory->create(ParserFactory::PREFER_PHP7);
+        $ast = $parser->parse($fileContent);
 
-        $normalizedTokenSequence = $this->tokenSequenceNormalizer->normalizeLevel1($tokenSequence);
+        if ($ast === null) {
+            return '';
+        }
 
-        return $normalizedTokenSequence->toCode();
+        return $this->level1PrettyPrinter->prettyPrint($ast);
     }
 }
