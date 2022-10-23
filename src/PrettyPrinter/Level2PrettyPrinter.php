@@ -14,7 +14,7 @@ class Level2PrettyPrinter extends Level1PrettyPrinter
     private const IDENTIFIER_REPLACEMENT = 'identifier';
     private const VAR_LIKE_IDENTIFIER_REPLACEMENT = '$x';
     private const STRING_REPLACEMENT = "'str'";
-    private const L_NUMBER_REPLACEMENT = '0x1';
+    private const L_NUMBER_REPLACEMENT = '1';
     private const D_NUMBER_REPLACEMENT = '1.0';
     private const EMPTY = '';
     private const INTERFACE_REPLACEMENT = 'interf';
