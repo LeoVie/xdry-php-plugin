@@ -77,7 +77,7 @@ class Level2PrettyPrinter extends Level1PrettyPrinter
 
     protected function pStmt_Namespace(Stmt\Namespace_ $node): string
     {
-        return self::EMPTY;
+        return $this->pStmts($node->stmts, false);
     }
 
     protected function pStmt_Use(Stmt\Use_ $node): string
