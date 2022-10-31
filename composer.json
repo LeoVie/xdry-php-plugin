@@ -73,7 +73,7 @@
     "require-dev": {
         "ergebnis/composer-normalize": "^2.28",
         "phpunit/phpunit": "^9.5",
-        "psalm/plugin-symfony": "^3.1",
+        "psalm/plugin-symfony": "^4.0",
         "vimeo/psalm": "^4.27"
     }
 }
