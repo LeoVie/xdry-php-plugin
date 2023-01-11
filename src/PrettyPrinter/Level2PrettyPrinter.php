@@ -7,6 +7,7 @@ use PhpParser\Node;
 use PhpParser\Node\Expr;
 use PhpParser\Node\Scalar;
 use PhpParser\Node\Stmt;
+use PhpParser\PrettyPrinter\Standard;
 
 class Level2PrettyPrinter extends Level1PrettyPrinter
 {
@@ -23,6 +24,53 @@ class Level2PrettyPrinter extends Level1PrettyPrinter
     private const PROPERTY_REPLACEMENT = '$prop';
     private const FUNCTION_REPLACEMENT = 'fun';
     private const CALL_LIKE_REPLACEMENT = 'funcall';
+
+    private function oldNew(string $old, string $new): string
+    {
+        return \Safe\json_encode([
+            'old' => $old,
+            'new' => $new,
+        ]);
+
+        return '__OLD__' . $old . '__NEW__' . $new . '__END__';
+    }
+
+    public function prettyPrintIntoTree(array $stmts): array
+    {
+        $pretty = $this->prettyPrint($stmts);
+
+        return $this->jsonDecodeOldNewRecursive($pretty);
+    }
+
+    private function jsonDecodeOldNewRecursive(string $oldNew): array
+    {
+        if ($oldNew === '') {
+            return [];
+        }
+
+        $oldNewArray = \Safe\json_decode($oldNew, true);
+
+        $newIsOldNewArray =
+            array_key_exists('new', $oldNewArray)
+            && is_array(\Safe\json_decode($oldNewArray['new'], true));
+
+        if (!$newIsOldNewArray) {
+            return $oldNewArray;
+        }
+
+        return [
+            'old' => $oldNewArray['old'],
+            'new' => $this->jsonDecodeOldNewRecursive($oldNewArray['new']),
+        ];
+    }
+
+    protected function p(Node $node, $parentFormatPreserved = false): string
+    {
+        return $this->oldNew(
+            (new Standard())->prettyPrint([$node]),
+            parent::p($node, $parentFormatPreserved),
+        );
+    }
 
     protected function pArg(Node\Arg $node): string
     {
@@ -56,18 +104,19 @@ class Level2PrettyPrinter extends Level1PrettyPrinter
         return self::L_NUMBER_REPLACEMENT;
     }
 
-    protected function pScalar_DNumber(Scalar\DNumber $node): string
-    {
-        return self::D_NUMBER_REPLACEMENT;
-    }
-
     protected function pExpr_Variable(Expr\Variable $node): string
     {
         if ($node->name instanceof Expr) {
+            // TODO: Expr cannot be cast to string
             return '${' . $this->p($node->name) . '}';
         }
 
         return self::VAR_LIKE_IDENTIFIER_REPLACEMENT;
+    }
+
+    protected function pScalar_DNumber(Scalar\DNumber $node): string
+    {
+        return self::D_NUMBER_REPLACEMENT;
     }
 
     protected function pExpr_ConstFetch(Expr\ConstFetch $node): string

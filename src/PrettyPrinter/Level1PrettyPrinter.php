@@ -4,8 +4,10 @@ declare(strict_types=1);
 namespace App\PrettyPrinter;
 
 use PhpParser\Node;
+use PhpParser\Node\Expr;
 use PhpParser\Node\Stmt;
 use PhpParser\PrettyPrinter\Standard;
+use PhpParser\Node\Scalar;
 
 class Level1PrettyPrinter extends Standard
 {
