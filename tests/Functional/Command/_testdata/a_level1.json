@@ -1,0 +1,830 @@
+[
+  {
+    "o": {
+      "code": "<?php\r\n",
+      "line": 1,
+      "pos": 0
+    },
+    "n": {
+      "code": "<?php ",
+      "line": 1,
+      "pos": 0
+    }
+  },
+  {
+    "o": {
+      "code": "declare",
+      "line": 2,
+      "pos": 7
+    },
+    "n": {
+      "code": "declare",
+      "line": 1,
+      "pos": 6
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 2,
+      "pos": 14
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 14
+    }
+  },
+  {
+    "o": {
+      "code": "strict_types",
+      "line": 2,
+      "pos": 15
+    },
+    "n": {
+      "code": "strict_types",
+      "line": 1,
+      "pos": 15
+    }
+  },
+  {
+    "o": {
+      "code": "=",
+      "line": 2,
+      "pos": 27
+    },
+    "n": {
+      "code": "=",
+      "line": 1,
+      "pos": 27
+    }
+  },
+  {
+    "o": {
+      "code": "1",
+      "line": 2,
+      "pos": 28
+    },
+    "n": {
+      "code": "1",
+      "line": 1,
+      "pos": 28
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 2,
+      "pos": 29
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 29
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 2,
+      "pos": 30
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 30
+    }
+  },
+  {
+    "o": {
+      "code": "namespace",
+      "line": 4,
+      "pos": 35
+    },
+    "n": {
+      "code": "namespace",
+      "line": 1,
+      "pos": 32
+    }
+  },
+  {
+    "o": {
+      "code": "Foo\\Bar",
+      "line": 4,
+      "pos": 45
+    },
+    "n": {
+      "code": "Foo\\Bar",
+      "line": 1,
+      "pos": 42
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 4,
+      "pos": 52
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 49
+    }
+  },
+  {
+    "o": {
+      "code": "function",
+      "line": 13,
+      "pos": 103
+    },
+    "n": {
+      "code": "function",
+      "line": 1,
+      "pos": 52
+    }
+  },
+  {
+    "o": {
+      "code": "foo",
+      "line": 13,
+      "pos": 112
+    },
+    "n": {
+      "code": "foo",
+      "line": 1,
+      "pos": 61
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 13,
+      "pos": 115
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 64
+    }
+  },
+  {
+    "o": {
+      "code": "string",
+      "line": 13,
+      "pos": 116
+    },
+    "n": {
+      "code": "string",
+      "line": 1,
+      "pos": 65
+    }
+  },
+  {
+    "o": {
+      "code": "$first",
+      "line": 13,
+      "pos": 123
+    },
+    "n": {
+      "code": "$first",
+      "line": 1,
+      "pos": 72
+    }
+  },
+  {
+    "o": {
+      "code": ",",
+      "line": 13,
+      "pos": 129
+    },
+    "n": {
+      "code": ",",
+      "line": 1,
+      "pos": 78
+    }
+  },
+  {
+    "o": {
+      "code": "int",
+      "line": 13,
+      "pos": 131
+    },
+    "n": {
+      "code": "int",
+      "line": 1,
+      "pos": 80
+    }
+  },
+  {
+    "o": {
+      "code": "$second",
+      "line": 13,
+      "pos": 135
+    },
+    "n": {
+      "code": "$second",
+      "line": 1,
+      "pos": 84
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 13,
+      "pos": 142
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 91
+    }
+  },
+  {
+    "o": {
+      "code": ":",
+      "line": 13,
+      "pos": 143
+    },
+    "n": {
+      "code": ":",
+      "line": 1,
+      "pos": 93
+    }
+  },
+  {
+    "o": {
+      "code": "int",
+      "line": 13,
+      "pos": 145
+    },
+    "n": {
+      "code": "int",
+      "line": 1,
+      "pos": 95
+    }
+  },
+  {
+    "o": {
+      "code": "{",
+      "line": 14,
+      "pos": 150
+    },
+    "n": {
+      "code": "{",
+      "line": 1,
+      "pos": 99
+    }
+  },
+  {
+    "o": {
+      "code": "$foo",
+      "line": 15,
+      "pos": 157
+    },
+    "n": {
+      "code": "$foo",
+      "line": 1,
+      "pos": 101
+    }
+  },
+  {
+    "o": {
+      "code": "=",
+      "line": 15,
+      "pos": 162
+    },
+    "n": {
+      "code": "=",
+      "line": 1,
+      "pos": 106
+    }
+  },
+  {
+    "o": {
+      "code": "$first",
+      "line": 15,
+      "pos": 164
+    },
+    "n": {
+      "code": "$first",
+      "line": 1,
+      "pos": 108
+    }
+  },
+  {
+    "o": {
+      "code": ".",
+      "line": 15,
+      "pos": 171
+    },
+    "n": {
+      "code": ".",
+      "line": 1,
+      "pos": 115
+    }
+  },
+  {
+    "o": {
+      "code": "$second",
+      "line": 15,
+      "pos": 173
+    },
+    "n": {
+      "code": "$second",
+      "line": 1,
+      "pos": 117
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 15,
+      "pos": 180
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 124
+    }
+  },
+  {
+    "o": {
+      "code": "return",
+      "line": 17,
+      "pos": 189
+    },
+    "n": {
+      "code": "return",
+      "line": 1,
+      "pos": 126
+    }
+  },
+  {
+    "o": {
+      "code": "strlen",
+      "line": 17,
+      "pos": 196
+    },
+    "n": {
+      "code": "strlen",
+      "line": 1,
+      "pos": 133
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 17,
+      "pos": 202
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 139
+    }
+  },
+  {
+    "o": {
+      "code": "$foo",
+      "line": 17,
+      "pos": 203
+    },
+    "n": {
+      "code": "$foo",
+      "line": 1,
+      "pos": 140
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 17,
+      "pos": 207
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 144
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 17,
+      "pos": 208
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 145
+    }
+  },
+  {
+    "o": {
+      "code": "}",
+      "line": 18,
+      "pos": 211
+    },
+    "n": {
+      "code": "}",
+      "line": 1,
+      "pos": 147
+    }
+  },
+  {
+    "o": {
+      "code": "class",
+      "line": 20,
+      "pos": 216
+    },
+    "n": {
+      "code": "class",
+      "line": 1,
+      "pos": 149
+    }
+  },
+  {
+    "o": {
+      "code": "Fancy",
+      "line": 20,
+      "pos": 222
+    },
+    "n": {
+      "code": "Fancy",
+      "line": 1,
+      "pos": 155
+    }
+  },
+  {
+    "o": {
+      "code": "{",
+      "line": 21,
+      "pos": 229
+    },
+    "n": {
+      "code": "{",
+      "line": 1,
+      "pos": 161
+    }
+  },
+  {
+    "o": {
+      "code": "private",
+      "line": 22,
+      "pos": 236
+    },
+    "n": {
+      "code": "private",
+      "line": 1,
+      "pos": 163
+    }
+  },
+  {
+    "o": {
+      "code": "string",
+      "line": 22,
+      "pos": 244
+    },
+    "n": {
+      "code": "string",
+      "line": 1,
+      "pos": 171
+    }
+  },
+  {
+    "o": {
+      "code": "$hello",
+      "line": 22,
+      "pos": 251
+    },
+    "n": {
+      "code": "$hello",
+      "line": 1,
+      "pos": 178
+    }
+  },
+  {
+    "o": {
+      "code": "=",
+      "line": 22,
+      "pos": 258
+    },
+    "n": {
+      "code": "=",
+      "line": 1,
+      "pos": 185
+    }
+  },
+  {
+    "o": {
+      "code": "'world'",
+      "line": 22,
+      "pos": 260
+    },
+    "n": {
+      "code": "'world'",
+      "line": 1,
+      "pos": 187
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 22,
+      "pos": 267
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 194
+    }
+  },
+  {
+    "o": {
+      "code": "public",
+      "line": 24,
+      "pos": 276
+    },
+    "n": {
+      "code": "public",
+      "line": 1,
+      "pos": 196
+    }
+  },
+  {
+    "o": {
+      "code": "function",
+      "line": 24,
+      "pos": 283
+    },
+    "n": {
+      "code": "function",
+      "line": 1,
+      "pos": 203
+    }
+  },
+  {
+    "o": {
+      "code": "bar",
+      "line": 24,
+      "pos": 292
+    },
+    "n": {
+      "code": "bar",
+      "line": 1,
+      "pos": 212
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 24,
+      "pos": 295
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 215
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 24,
+      "pos": 296
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 216
+    }
+  },
+  {
+    "o": {
+      "code": ":",
+      "line": 24,
+      "pos": 297
+    },
+    "n": {
+      "code": ":",
+      "line": 1,
+      "pos": 218
+    }
+  },
+  {
+    "o": {
+      "code": "float",
+      "line": 24,
+      "pos": 299
+    },
+    "n": {
+      "code": "float",
+      "line": 1,
+      "pos": 220
+    }
+  },
+  {
+    "o": {
+      "code": "{",
+      "line": 25,
+      "pos": 310
+    },
+    "n": {
+      "code": "{",
+      "line": 1,
+      "pos": 226
+    }
+  },
+  {
+    "o": {
+      "code": "return",
+      "line": 26,
+      "pos": 321
+    },
+    "n": {
+      "code": "return",
+      "line": 1,
+      "pos": 228
+    }
+  },
+  {
+    "o": {
+      "code": "100.0",
+      "line": 26,
+      "pos": 328
+    },
+    "n": {
+      "code": "100.0",
+      "line": 1,
+      "pos": 235
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 26,
+      "pos": 333
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 240
+    }
+  },
+  {
+    "o": {
+      "code": "}",
+      "line": 27,
+      "pos": 340
+    },
+    "n": {
+      "code": "}",
+      "line": 1,
+      "pos": 242
+    }
+  },
+  {
+    "o": {
+      "code": "}",
+      "line": 28,
+      "pos": 343
+    },
+    "n": {
+      "code": "}",
+      "line": 1,
+      "pos": 244
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 30,
+      "pos": 348
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 246
+    }
+  },
+  {
+    "o": {
+      "code": "new",
+      "line": 30,
+      "pos": 349
+    },
+    "n": {
+      "code": "new",
+      "line": 1,
+      "pos": 247
+    }
+  },
+  {
+    "o": {
+      "code": "Fancy",
+      "line": 30,
+      "pos": 353
+    },
+    "n": {
+      "code": "Fancy",
+      "line": 1,
+      "pos": 251
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 30,
+      "pos": 358
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 256
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 30,
+      "pos": 359
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 257
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 30,
+      "pos": 360
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 258
+    }
+  },
+  {
+    "o": {
+      "code": "->",
+      "line": 30,
+      "pos": 361
+    },
+    "n": {
+      "code": "->",
+      "line": 1,
+      "pos": 259
+    }
+  },
+  {
+    "o": {
+      "code": "bar",
+      "line": 30,
+      "pos": 363
+    },
+    "n": {
+      "code": "bar",
+      "line": 1,
+      "pos": 261
+    }
+  },
+  {
+    "o": {
+      "code": "(",
+      "line": 30,
+      "pos": 366
+    },
+    "n": {
+      "code": "(",
+      "line": 1,
+      "pos": 264
+    }
+  },
+  {
+    "o": {
+      "code": ")",
+      "line": 30,
+      "pos": 367
+    },
+    "n": {
+      "code": ")",
+      "line": 1,
+      "pos": 265
+    }
+  },
+  {
+    "o": {
+      "code": ";",
+      "line": 30,
+      "pos": 368
+    },
+    "n": {
+      "code": ";",
+      "line": 1,
+      "pos": 266
+    }
+  }
+]

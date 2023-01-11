@@ -9,8 +9,13 @@ parameters:
     	- %currentWorkingDirectory%/tests/**/_testdata/*
     ignoreErrors:
         - '#Calling PhpParser\\Node.*::__construct\(\).* is forbidden.+#'
+        - '#Method App\\Tests\\.+Provider\(\) return type has no value type specified in iterable type array\.+#'
+        - '#Method App\\Tests\\.+test.+\(\) has parameter .+ with no value type specified in iterable type array\.+#'
     disallowedMethodCalls:
         - method: '*\*::__construct'
           message: "Don't use naive object instantiation."
           allowIn:
               - %currentWorkingDirectory%/tests/*
+              - %currentWorkingDirectory%/src/Token/Token.php
+              - %currentWorkingDirectory%/src/Token/TokenSequence.php
+              - %currentWorkingDirectory%/src/Token/TokenNotFoundException.php
