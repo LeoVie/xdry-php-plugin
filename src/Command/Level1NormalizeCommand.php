@@ -16,7 +16,7 @@ class Level1NormalizeCommand extends Command
     public const ARGUMENT_FILEPATH = 'filepath';
     protected static $defaultName = self::NAME;
 
-    public function __construct(private Level1NormalizeService $level1NormalizeService)
+    public function __construct(private readonly Level1NormalizeService $level1NormalizeService)
     {
         parent::__construct(self::$defaultName);
     }
@@ -34,7 +34,13 @@ class Level1NormalizeCommand extends Command
         /** @var string $filepath */
         $filepath = $input->getArgument(self::ARGUMENT_FILEPATH);
 
-        $output->write($this->level1NormalizeService->normalizeFileContent(\Safe\file_get_contents($filepath)));
+        $output->write(
+            \Safe\json_encode(
+                $this->level1NormalizeService->normalize(
+                    \Safe\file_get_contents($filepath)
+                )
+            )
+        );
 
         return Command::SUCCESS;
     }

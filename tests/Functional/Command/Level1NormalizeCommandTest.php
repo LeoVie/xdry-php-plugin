@@ -22,24 +22,31 @@ class Level1NormalizeCommandTest extends KernelTestCase
     }
 
     /** @dataProvider normalizeProvider */
-    public function testNormalize(string $expected, string $filepath): void
+    public function testNormalize(string $filepath, array $expected): void
     {
         $this->commandTester->execute([
             Level1NormalizeCommand::ARGUMENT_FILEPATH => $filepath
         ]);
         $output = $this->commandTester->getDisplay();
 
-        self::assertSame($expected, $output);
+        self::assertSame(
+            $expected,
+            \Safe\json_decode($output, true)
+        );
     }
 
-    /** @return array<mixed> */
     public function normalizeProvider(): array
     {
         $testdataDir = __DIR__ . '/_testdata/';
+
         return [
-            'a' => [
-                'expected' => \Safe\file_get_contents($testdataDir . 'a_level1.php'),
+            [
                 'filepath' => $testdataDir . 'a.php',
+                'expected' => \Safe\json_decode(\Safe\file_get_contents($testdataDir . 'a_level1.json'), true),
+            ],
+            [
+                'filepath' => $testdataDir . 'b.php',
+                'expected' => \Safe\json_decode(\Safe\file_get_contents($testdataDir . 'b_level1.json'), true),
             ]
         ];
     }
