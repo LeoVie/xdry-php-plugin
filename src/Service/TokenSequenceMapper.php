@@ -12,6 +12,7 @@ class TokenSequenceMapper
 {
     /**
      * @return array<array{
+     *     t: int,
      *     o: Token,
      *     n: Token
      * }>
@@ -27,6 +28,7 @@ class TokenSequenceMapper
             !== null
         ) {
             $mapping[] = [
+                't' => $n->phpToken->id,
                 'o' => $tokenSequenceOriginal->findNextByTokenId($n->phpToken->id),
                 'n' => $n,
             ];
